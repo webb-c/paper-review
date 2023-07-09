@@ -3,13 +3,21 @@
 컴퓨터 과학, 그중에서도 주로 딥러닝 관련 논문을 읽고 그 내용을 간략하게 정리한 레포입니다.
 간단하게 읽은 논문은 모두 이 레포에 저장되고 그중에서도 중요한 내용은 자세히 정리하여 티스토리나 유튜브 영상으로 업로드할 예정입니다.
 
-### paper list 
+### paper list
+
 현재까지 리뷰한 논문의 목록은 아래와 같습니다.
+
+- Optimal Control of Distributed Computing Networks with Mixed-Cast Traffic Flows (INFOCOM 2018)
+  - [Original Paper Link](https://ieeexplore.ieee.org/document/8485956) / Paper Review Post / Paper Review Video
+
+<br>
 
 ---
 
 ### Template
+
 논문 리뷰에 사용하는 템플릿은 아래와 같습니다.
+
 ```
 # paper Title
 
@@ -20,7 +28,7 @@
 #### Information
 
 - Author/Institution :
-- Conference/Journal : 
+- Conference/Journal :
 - Cited by _ (YYYY.MM.DD)
 - Submitted on Day Month Year
 
@@ -49,9 +57,10 @@
 ---
 
 ### Commit Rules
-커밋 규칙은 아래와 같습니다.  
+
+커밋 규칙은 아래와 같습니다.
 
 `add : 논문 이름` : 논문 리뷰 파일(`.md`) 추가 & README 정보 업데이트  
 `add+ : 논문 이름` : 특정 논문 리뷰 티스토리 업로드  
 `add++ : 논문 이름` : 특정 논문 리뷰 유튜브 업로드  
-`update : 논문 이름` : 첫 논문 리뷰 등록 이후 수정  
+`update : 논문 이름` : 첫 논문 리뷰 등록 이후 수정
