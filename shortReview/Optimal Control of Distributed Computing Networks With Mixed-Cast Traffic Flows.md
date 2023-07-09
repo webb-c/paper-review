@@ -94,39 +94,43 @@ $$
 
 virtual system에서의 표현 (flow scailing 때문에 아래 표현으로 바꿔야한다.)
 
-- $x^{(\phi, i)} = r^{(\phi, i)}\prod^{i-1}_{j=1}\xi^{(\phi, j)}$ : require computation resource
-- $w^{(\phi, i)} = \prod^{i}_{j=1}\xi^{(\phi, j)}$ : require computation resource
+- $x^{(\phi, i)} = r^{(\phi, i)}\prod\xi^{(\phi, j)}$ : require computation resource
+- $w^{(\phi, i)} = \prod\xi^{(\phi, j)}$ : require computation resource
 
 ### capacity region
 
 - $\mathcal T^{(c,\phi)}$ : set of all service chain pahts for $(c,\phi)$ packets
-- $\lambda^{(c, \phi)}_k$ : average arrival flow rate of commodity $(c,\phi)$ for packet that use $k$'th path
-  $$
-  \begin{equation*} \lambda^{(c,\phi)}=\sum_{T_{k}^{(c,\phi)}\in \mathcal{T}^{(c,\phi)}}\lambda_{k}^{(c,\phi)},\forall(c,\phi)\in(\mathcal{C},\Phi) \end{equation*}
-  $$
+- $\lambda^{(c, \phi)}\_k$ : average arrival flow rate of commodity $(c,\phi)$ for packet that use $k$'th path
+
+  
+$$
+\begin{equation} \lambda^{(c,\phi)}=\sum_{T_{k}^{(c,\phi)}\in \mathcal{T}^{(c,\phi)}}\lambda_{k}^{(c,\phi)},\forall(c,\phi)\in(\mathcal{C},\Phi) \end{equation}
+$$
+
 - link capacity
-  $$
-  \begin{align*} &\sum_{(k,i,c,\phi)\in \mathcal{S}_{uv}}w^{(\phi,i)}\lambda_{k}^{(c,\phi)}\leq\mu_{uv},\qquad \forall(u, v)\in \mathcal{E},\\ &\sum_{(k,i,c,\phi)\in \mathcal{S}_{u}}x^{(\phi,i)}\lambda_{k}^{(c,\phi)}\leq\mu_{u},\qquad\qquad \forall u\in \mathcal{V} \end{align*}
-  $$
+
+  
+$$
+\begin{align*} &\sum\_{(k,i,c,\phi)\in \mathcal{S}\_{uv}}w^{(\phi,i)}\lambda\_{k}^{(c,\phi)}\leq\mu_{uv},\qquad \forall(u, v)\in \mathcal{E},\\ &\sum\_{(k,i,c,\phi)\in \mathcal{S}\_{u}}x^{(\phi,i)}\lambda\_{k}^{(c,\phi)}\leq\mu\_{u},\qquad\qquad \forall u\in \mathcal{V} \end{align*}
+$$
 
 ### Dynamic Routing
 
 queueing dynamics in virtual system
 
-$$
-\begin{align*} A_{uv}^{(c,\phi),\pi}(t)=\sum_{(u^{(\phi,i)},v^{(\phi,i)})\in T^{(c,\phi)\pi}}w^{(\phi,i)}A^{(c,\phi)}(t) \\ \begin{equation*} A_{u}^{(c,\phi),\pi}(t)=\sum_{u(u^{(\phi,i-1),(\phi,i)})\in T^{(c,\phi),\pi}}x^{(\phi,i)}A^{(c,\phi)}(t) \end{equation*} \end{align*}
-$$
+$$ \begin{equation} A\_{uv}^{(c,\phi),\pi}(t)=\sum\_{(u^{(\phi,i)},v^{(\phi,i)})\in T^{(c,\phi)\pi}}w^{(\phi,i)}A^{(c,\phi)}(t) \end{equation} $$  
 
-$$
-\begin{align*} &\tilde{Q}_{uv}(t+1) = \left(\tilde{Q}_{uv}(t)+\sum_{(c,\phi)\in(\mathcal{C},\Phi)}A_{uv}^{(c,\phi),\pi}(t)-\mu_{uv}\right)^{+}\\ &\tilde{Q}_{u}(t+1) = \left(\tilde{Q}_{u}(t)+\sum_{(c,\phi)\in(\mathcal{C},\Phi)}A_{u}^{(c,\phi),\pi}(t)-\mu_{u}\right)^{+} \end{align*}
-$$
+$$ \begin{equation} A\_{u}^{(c,\phi),\pi}(t)=\sum\_{u(u^{(\phi,i-1),(\phi,i)})\in T^{(c,\phi),\pi}}x^{(\phi,i)}A^{(c,\phi)}(t) \end{equation} $$
+
+$$ \begin{equation} \tilde{Q}\_{uv}(t+1) = \left(\tilde{Q}\_{uv}(t)+\sum\_{(c,\phi)\in(\mathcal{C},\Phi)}A\_{uv}^{(c,\phi),\pi}(t)-\mu\_{uv}\right)^{+} \end{equation} $$  
+
+$$ \begin{equation} \tilde{Q}\_{u}(t+1) = \left(\tilde{Q}\_{u}(t)+\sum\_{(c,\phi)\in(\mathcal{C},\Phi)}A\_{u}^{(c,\phi),\pi}(t)-\mu\_{u}\right)^{+} \end{equation} $$
 
 layered graph에서 엣지의 가중치의 합이 최소가 되도록 만드는 경로를 찾는다.
 
-$$
-\text{minimize} \\\ \\
-\begin{align*} &\sum_{(u,v)\in \mathcal{E}}\tilde{Q}_{uv}(t)A_{uv}^{(c,\phi),\pi}(t)+\sum_{u\in \mathcal{V}}\tilde{Q}_{u}(t)A_{u}^{(c,\phi),\pi}(t)\\ &=A^{(c,\phi)}(t)(\sum_{u^{(\phi,i)},v^{(\phi,i)\in\mathcal{E}^{(\phi)}}}w^{(\phi,i)}\tilde{Q}_{uv}(t)1\{(u^{(\phi,i)},v^{(\phi,i)})\in T^{(c,\phi),\pi}\}\\ &+\sum_{(u^{(\phi,i-1)},u^{(\phi,i)\in\mathcal{E}^{(\phi)}}}x^{(\phi,i)}\tilde{Q}_{u}(t)1\{(u^{(\phi,i-1)},u^{(\phi,i)})\in T^{(c,\phi),\pi}\}).\tag{9} \end{align*}
-$$
+$$ \text{minimize} \ \begin{equation} \sum_{(u,v)\in \mathcal{E}}\tilde{Q}\_{uv}(t)A\_{uv}^{(c,\phi),\pi}(t)+\sum\_{u\in \mathcal{V}}\tilde{Q}\_{u}(t)A_{u}^{(c,\phi),\pi}(t) \end{equation} $$  
+
+$$ \begin{equation} =\ A^{(c,\phi)}(t)(\sum\_{u^{(\phi,i)},v^{(\phi,i)\in\mathcal{E}^{(\phi)}}}w^{(\phi,i)}\tilde{Q}\_{uv}(t)1\{(u^{(\phi,i)},v^{(\phi,i)})\in T^{(c,\phi),\pi}\} +\sum\_{(u^{(\phi,i-1)},u^{(\phi,i)\in\mathcal{E}^{(\phi)}}}x^{(\phi,i)}\tilde{Q}\_{u}(t)1\{(u^{(\phi,i-1)},u^{(\phi,i)})\in T^{(c,\phi),\pi}\}) \end{equation} $$
 
 <br>
 
