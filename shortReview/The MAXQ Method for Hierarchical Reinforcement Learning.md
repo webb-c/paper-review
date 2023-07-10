@@ -53,7 +53,7 @@ value function을 MAXQ decomposition으로 표현하는 Hierarchical Reinforceme
 
 ## Algorithm
 
-전체 MDP에 대한 각각의 subtask를 표현하는 MDP $M_i$는 각각의 goal state $G_i \sube T_i$를 가지고 있으며, 각 subtask의 policy $\pi_i$는 goal state에 가까워지도록 학습된다. 따라서 각각의 sub task에 대한 optimal policy를 구할 수 있으며 *Hierarchical poliy*는 이런 policy들의 set으로 표현된다. $\pi = \{\pi_0, \cdots, \pi_n\}$
+전체 MDP에 대한 각각의 subtask를 표현하는 MDP $M_i$는 각각의 goal state $G_i ⊆ T_i$를 가지고 있으며, 각 subtask의 policy $\pi_i$는 goal state에 가까워지도록 학습된다. 따라서 각각의 sub task에 대한 optimal policy를 구할 수 있으며 *Hierarchical poliy*는 이런 policy들의 set으로 표현된다. $\pi = \{\pi_0, \cdots, \pi_n\}$
 
 위의 예시 문제에 대한 MAXQ 그래프는 아래와 같다.
 
@@ -72,9 +72,9 @@ value function을 MAXQ decomposition으로 표현하는 Hierarchical Reinforceme
 
 $$
 V^\pi_i(s) = V^\pi_a(s) + \sum_{s'}P_i(s'|s,a) V^\pi_i(s')
-$$
+$$  
 
-(where $a = \pi_i(s)$)
+where $a=\pi_i(s)$
 
 위와같이 즉각적인 reward와 함께 그 다음 subroutine 에서의 value function의 합의 형태로 value function을 decomposition 할 수 있다.
 
@@ -94,7 +94,7 @@ $$
 
 _decomposition_
 
-<center><img src="../image/9.png" width="500"></center>
+<center><img src="../image/9.png" width="600"></center>
 
 ## Insight
 
