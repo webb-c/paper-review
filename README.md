@@ -11,7 +11,8 @@
   - [Original Paper Link](https://ieeexplore.ieee.org/document/8485956) / Paper Review Post / Paper Review Video
 - [x] webb-c/paperReview#4 FrameHopper: Selective Processing of Video Frames in Detection-driven Real-Time Video Analytics (DCOSS 2022)
   - [Original Paper Link](https://ieeexplore.ieee.org/abstract/document/9881637) / Paper Review Post / Paper Review Video
-- [ ] webb-c/paperReview#1
+- [x] webb-c/paperReview#1 The MAXQ Method for Hierarchical Reinforcement Learning (Journal of artificial intelligence research 1998)
+  - [Original Paper Link](https://arxiv.org/abs/cs/9905014) / Paper Review Post / Paper Review Video
 - [ ] webb-c/paperReview#2
 - [ ] webb-c/paperReview#5
 - [ ] webb-c/paperReview#6
