@@ -7,11 +7,15 @@
 
 현재까지 리뷰한 논문의 목록은 아래와 같습니다.
 
-- Optimal Control of Distributed Computing Networks with Mixed-Cast Traffic Flows (INFOCOM 2018)
+- [x] webb-c/paperReview#3 Optimal Control of Distributed Computing Networks with Mixed-Cast Traffic Flows (INFOCOM 2018)
   - [Original Paper Link](https://ieeexplore.ieee.org/document/8485956) / Paper Review Post / Paper Review Video
-- FrameHopper: Selective Processing of Video Frames in Detection-driven Real-Time Video Analytics (DCOSS 2022)
+- [x] webb-c/paperReview#4 FrameHopper: Selective Processing of Video Frames in Detection-driven Real-Time Video Analytics (DCOSS 2022)
   - [Original Paper Link](https://ieeexplore.ieee.org/abstract/document/9881637) / Paper Review Post / Paper Review Video
-    <br>
+- [ ] webb-c/paperReview#1
+- [ ] webb-c/paperReview#2
+- [ ] webb-c/paperReview#5
+
+<br>
 
 ---
 
