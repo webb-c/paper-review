@@ -62,32 +62,34 @@ $$
 - frame f_i를 처리할 때, skip할 frame의 개수 : $\kappa(i)$
 - error
 
-  $$
-  E(f_i, k) = \sum^k_{j=1} \mathcal D(f_i, f\_{i+j})
-  $$
+$$ E(f_i, k) = \sum^k_{j=1} \mathcal D(f_i, f\_{i+j}) $$
 
-- frame difference  
-   $$ \mathcal D(f_i, f_j) = 1 - F1(f_i, f_j) $$
+- frame difference
 
-  \* in object detection ...
+  
+$$ \mathcal D(f_i, f_j) = 1 - F1(f_i, f_j) $$
+
+  _in object detection ..._
 
   - precision
 
-    $$
-    precision=\frac{\#\ of\ hits}{\#\ of\ detected\ objects}
-    $$
+
+$$
+precision=\frac{number\ of\ hits}{number\ of\ detected\ objects}
+$$
 
   - recall
-
-    $$
-    recall = \frac{\#\ of\ hits}{actual\ \#\ of\ detected\ objects}
-    $$
+  
+  
+$$
+recall = \frac{number\ of\ hits}{actual\ number\ of\ detected\ objects}
+$$
 
   - F1-score
 
-    $$
-    F1=2\times \frac{precision \times recall}{precision + recall}
-    $$
+$$
+F1=2\times \frac{precision \times recall}{precision + recall}
+$$
 
 ## Insight
 
