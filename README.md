@@ -9,8 +9,9 @@
 
 - Optimal Control of Distributed Computing Networks with Mixed-Cast Traffic Flows (INFOCOM 2018)
   - [Original Paper Link](https://ieeexplore.ieee.org/document/8485956) / Paper Review Post / Paper Review Video
-
-<br>
+- FrameHopper: Selective Processing of Video Frames in Detection-driven Real-Time Video Analytics (DCOSS 2022)
+  - [Original Paper Link](https://ieeexplore.ieee.org/abstract/document/9881637) / Paper Review Post / Paper Review Video
+    <br>
 
 ---
 
@@ -29,7 +30,7 @@
 
 - Author/Institution :
 - Conference/Journal :
-- Cited by _ (YYYY.MM.DD)
+- Cited by _ _(YYYY.MM.DD)_
 - Submitted on Day Month Year
 
 ## Abstract
