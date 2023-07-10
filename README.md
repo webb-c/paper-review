@@ -14,6 +14,7 @@
 - [ ] webb-c/paperReview#1
 - [ ] webb-c/paperReview#2
 - [ ] webb-c/paperReview#5
+- [ ] webb-c/paperReview#6
 
 <br>
 
@@ -65,6 +66,7 @@
 
 커밋 규칙은 아래와 같습니다.
 
+`new : 논문 이름` : 읽을 논문 issue 등록
 `add : 논문 이름` : 논문 리뷰 파일(`.md`) 추가 & README 정보 업데이트  
 `add+ : 논문 이름` : 특정 논문 리뷰 티스토리 업로드  
 `add++ : 논문 이름` : 특정 논문 리뷰 유튜브 업로드  
