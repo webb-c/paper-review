@@ -15,7 +15,8 @@
   - [Original Paper Link](https://arxiv.org/abs/cs/9905014) / Paper Review Post / Paper Review Video
 - [x] ~~webb-c/paperReview#2 Data-Efficient Hierarchical Reinforcement Learning (NeurIPS 2018)~~
   - [Original Paper Link](https://arxiv.org/abs/1805.08296) / Paper Review Post / Paper Review Video
-- [ ] webb-c/paperReview#5
+- [x] webb-c/paperReview#5 Hindsight Experience Replay (NeurIPS 2017)
+  - [Original Paper Link](https://arxiv.org/abs/1707.01495) / Paper Review Post / Paper Review Video
 - [ ] webb-c/paperReview#6
 
 <br>
