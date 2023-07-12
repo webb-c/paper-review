@@ -17,7 +17,8 @@
   - [Original Paper Link](https://arxiv.org/abs/1805.08296) / Paper Review Post / Paper Review Video
 - [x] webb-c/paperReview#5 Hindsight Experience Replay (NeurIPS 2017)
   - [Original Paper Link](https://arxiv.org/abs/1707.01495) / Paper Review Post / Paper Review Video
-- [ ] webb-c/paperReview#6
+- [x] webb-c/paperReview#6 RUDDER: Return Decomposition for Delayed Rewards (NeurIPS 2019)
+  - [Original Paper Link](https://arxiv.org/abs/1806.07857) / Paper Review Post / Paper Review Video
 
 <br>
 
