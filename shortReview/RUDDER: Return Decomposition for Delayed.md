@@ -64,7 +64,7 @@ strictly return-equivalent한 SDP를 이용하면 reward redistribution이 가�
 - At time $t-1$ the immediate reward is $R_t$ with expectation $r(s_{t-1}, a_{t-1})$
 - Expected future reward $\kappa(m, t-1)$ at time $t-1$ as the expected sum of rewards from $R_{t+1}$ to $R_{t+1+m}$
 
-즉, time $t-1$에 수행했던 action-state 쌍$(s_{t-1}, a_{t-1})$으로부터 $m$ step 뒤에 전달되는 expected future reward를 아래와 같이 표현할 수 있음을 정의한다.
+즉, time $t-1$에 수행했던 action-state 쌍 $(s\_{t-1}, a\_{t-1})$으로부터 $m$ step 뒤에 전달되는 expected future reward를 아래와 같이 표현할 수 있음을 정의한다.
 
 $$
 \kappa(m, t-1) = \mathbb E_{\sim \pi} \left[\sum^m_{\tau=0} R_{t+1+\tau} | s_{t-1}, a_{t-1}\right]
@@ -82,10 +82,10 @@ $$
 
 따라서 다음의 Theorem2를 따라서 delayed reward를 가지는 MDP $\tilde {\mathcal P}$과 어떤 policy $\pi$에 대하여 return-equivalent SDP $\mathcal{P}$로 *optimal reward redistribution*과 함께 변환할 수 있다.
 
-**Theorem 2.** We assume a delayed reward MDP $\tilde{\mathcal P}$, where the accumulated reward is given at sequence end. A new SDP \mathcal P is obtained by a second order Markov reward redistribution, which ensures that $\mathcal P$ is return-equivalent to $\tilde{\mathcal P}$. **For a specific** $\pi$, **the following two statements are equivalent :**
+**Theorem 2.** We assume a delayed reward MDP $\tilde{\mathcal P}$, where the accumulated reward is given at sequence end. A new SDP $\mathcal P$ is obtained by a second order Markov reward redistribution, which ensures that $\mathcal P$ is return-equivalent to $\tilde{\mathcal P}$. **For a specific** $\pi$, **the following two statements are equivalent :**
 
 1. $\kappa(T-t-1, t) = 0$ i.e., the reward redistribution is optimal
-2. $\mathbb E [R_{t+1} | s_{t-1}, a_{t-1}, s_t, a_t] = \tilde{q}_{\pi}(s_t, a_t) - \tilde{q}_{\pi}(s_{t-1}, a_{t-1})$
+2. $\mathbb E [R_{t+1} | s_{t-1}, a_{t-1}, s_t, a_t] = \tilde{q}\_{\pi}(s_t, a_t) - \tilde{q}\_{\pi}(s_{t-1}, a_{t-1})$
 
 1번 조건을 만족한다는 것은 변환한 SDP $\mathcal P$는 delayed reward를 가지지 않는 다는 의미이다. 또한 Theorem 2의 2번째 equation에서는 optimal reward redistribution을 위해 사용되는 expected reward는 원래 MDP에서의 **Q-value의 차이**로 정의되야함을 의미한다.
 _\*return이 동일하려면 이렇게 되야함_
@@ -97,7 +97,7 @@ q_\pi(s_t, a_t) = r(s_t, a_t)
 $$
 
 $$
-= \tilde{q}_{\pi}(s_t, a_t) - \mathbb E_{s_{t-1}, a_{t-1}}  [\tilde{q}_{\pi}(s_{t-1}, a_{t-1})|s_t] = \tilde{q}_{\pi}(s_t, a_t) - \psi_\pi(s_t)
+= \tilde{q}\_{\pi}(s_t, a_t) - \mathbb E_{s_{t-1}, a_{t-1}}  [\tilde{q}\_{\pi}(s_{t-1}, a_{t-1})|s_t] = \tilde{q}\_{\pi}(s_t, a_t) - \psi_\pi(s_t)
 $$
 
 ## Insight
