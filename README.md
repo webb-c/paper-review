@@ -19,6 +19,8 @@
   - [Original Paper Link](https://arxiv.org/abs/1707.01495) / Paper Review Post / Paper Review Video
 - [x] webb-c/paperReview#6 RUDDER: Return Decomposition for Delayed Rewards (NeurIPS 2019)
   - [Original Paper Link](https://arxiv.org/abs/1806.07857) / Paper Review Post / Paper Review Video
+- [ ] webb-c/paperReview#7 Optimal Control for Generalized Network-Flow Problems (IEEE/ACM Transactions on Networking 2018)
+  - [Original Paper Link](https://ieeexplore.ieee.org/abstract/document/8241883) / Paper Review Post / Paper Review Video
 
 <br>
 
