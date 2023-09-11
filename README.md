@@ -5,7 +5,7 @@
 
 ### paper list
 
-현재까지 리뷰한 논문의 목록은 아래와 같습니다.
+현재까지 리뷰한 논문/자료의 목록은 아래와 같습니다.
 
 - [x] webb-c/paperReview#3 Optimal Control of Distributed Computing Networks with Mixed-Cast Traffic Flows (INFOCOM 2018)
   - [Original Paper Link](https://ieeexplore.ieee.org/document/8485956) / Paper Review Post / Paper Review Video
@@ -23,7 +23,8 @@
   - [Original Paper Link](https://ieeexplore.ieee.org/abstract/document/8241883) / Paper Review Post / Paper Review Video
 - [ ] webb-c/paperReview#8 Policy Learning with Constraints in Model-free Reinforcement Learning A Survey (IJCAI 2021)
   - [Original Paper Link](https://par.nsf.gov/biblio/10313521) / Paper Review Post / Paper Review Video
-
+- [ ] webb-c/paperReview#9 Infinitely often, Probability 1, Borel-Cantelli, and the Law of Large Numbers
+  - [Original Paper Link](https://viterbi-web.usc.edu/~mjneely/Borel-Cantelli-LLN.pdf) / Paper Review Post / Paper Review Video
 <br>
 
 ---
