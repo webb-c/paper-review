@@ -21,6 +21,8 @@
   - [Original Paper Link](https://arxiv.org/abs/1806.07857) / Paper Review Post / Paper Review Video
 - [ ] webb-c/paperReview#7 Optimal Control for Generalized Network-Flow Problems (IEEE/ACM Transactions on Networking 2018)
   - [Original Paper Link](https://ieeexplore.ieee.org/abstract/document/8241883) / Paper Review Post / Paper Review Video
+- [ ] webb-c/paperReview#8 Policy Learning with Constraints in Model-free Reinforcement Learning A Survey (IJCAI 2021)
+  - [Original Paper Link](https://par.nsf.gov/biblio/10313521) / Paper Review Post / Paper Review Video
 
 <br>
 
